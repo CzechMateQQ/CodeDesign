@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.106
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DynamicArray", "DynamicArray\DynamicArray.vcxproj", "{4F1B4010-97AA-4017-9628-4620C82D8BA7}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinkedLists", "LinkedLists\LinkedLists.vcxproj", "{4E1840D8-515B-4504-99FE-54B867ADB2DA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{4F1B4010-97AA-4017-9628-4620C82D8BA7}.Release|x64.Build.0 = Release|x64
 		{4F1B4010-97AA-4017-9628-4620C82D8BA7}.Release|x86.ActiveCfg = Release|Win32
 		{4F1B4010-97AA-4017-9628-4620C82D8BA7}.Release|x86.Build.0 = Release|Win32
+		{4E1840D8-515B-4504-99FE-54B867ADB2DA}.Debug|x64.ActiveCfg = Debug|x64
+		{4E1840D8-515B-4504-99FE-54B867ADB2DA}.Debug|x64.Build.0 = Debug|x64
+		{4E1840D8-515B-4504-99FE-54B867ADB2DA}.Debug|x86.ActiveCfg = Debug|Win32
+		{4E1840D8-515B-4504-99FE-54B867ADB2DA}.Debug|x86.Build.0 = Debug|Win32
+		{4E1840D8-515B-4504-99FE-54B867ADB2DA}.Release|x64.ActiveCfg = Release|x64
+		{4E1840D8-515B-4504-99FE-54B867ADB2DA}.Release|x64.Build.0 = Release|x64
+		{4E1840D8-515B-4504-99FE-54B867ADB2DA}.Release|x86.ActiveCfg = Release|Win32
+		{4E1840D8-515B-4504-99FE-54B867ADB2DA}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
