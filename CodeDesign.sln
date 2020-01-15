@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DynamicArray", "DynamicArra
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinkedLists", "LinkedLists\LinkedLists.vcxproj", "{4E1840D8-515B-4504-99FE-54B867ADB2DA}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sorting", "Sorting\Sorting.vcxproj", "{55E72C5D-E5B6-449E-AE85-4281684C843E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{4E1840D8-515B-4504-99FE-54B867ADB2DA}.Release|x64.Build.0 = Release|x64
 		{4E1840D8-515B-4504-99FE-54B867ADB2DA}.Release|x86.ActiveCfg = Release|Win32
 		{4E1840D8-515B-4504-99FE-54B867ADB2DA}.Release|x86.Build.0 = Release|Win32
+		{55E72C5D-E5B6-449E-AE85-4281684C843E}.Debug|x64.ActiveCfg = Debug|x64
+		{55E72C5D-E5B6-449E-AE85-4281684C843E}.Debug|x64.Build.0 = Debug|x64
+		{55E72C5D-E5B6-449E-AE85-4281684C843E}.Debug|x86.ActiveCfg = Debug|Win32
+		{55E72C5D-E5B6-449E-AE85-4281684C843E}.Debug|x86.Build.0 = Debug|Win32
+		{55E72C5D-E5B6-449E-AE85-4281684C843E}.Release|x64.ActiveCfg = Release|x64
+		{55E72C5D-E5B6-449E-AE85-4281684C843E}.Release|x64.Build.0 = Release|x64
+		{55E72C5D-E5B6-449E-AE85-4281684C843E}.Release|x86.ActiveCfg = Release|Win32
+		{55E72C5D-E5B6-449E-AE85-4281684C843E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

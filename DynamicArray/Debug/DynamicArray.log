@@ -1,0 +1,18 @@
+﻿  main.cpp
+c:\users\s199083\visualstudios\c++\codedesign\dynamicarray\tvector.h(58): error C2760: syntax error: unexpected token ')', expected ';'
+  c:\users\s199083\visualstudios\c++\codedesign\dynamicarray\tvector.h(98): note: see reference to class template instantiation 'tVector<T>' being compiled
+c:\users\s199083\visualstudios\c++\codedesign\dynamicarray\main.cpp(18): error C3867: 'tVector<int>::size': non-standard syntax; use '&' to create a pointer to member
+c:\users\s199083\visualstudios\c++\codedesign\dynamicarray\main.cpp(18): error C2446: '<': no conversion from 'size_t (__thiscall tVector<int>::* )(void) const' to 'int'
+  c:\users\s199083\visualstudios\c++\codedesign\dynamicarray\main.cpp(18): note: There is no context in which this conversion is possible
+  tVector.cpp
+c:\users\s199083\visualstudios\c++\codedesign\dynamicarray\tvector.h(58): error C2760: syntax error: unexpected token ')', expected ';'
+  c:\users\s199083\visualstudios\c++\codedesign\dynamicarray\tvector.h(98): note: see reference to class template instantiation 'tVector<T>' being compiled
+c:\users\s199083\visualstudios\c++\codedesign\dynamicarray\tvector.cpp(5): error C2955: 'tVector': use of class template requires template argument list
+  c:\users\s199083\visualstudios\c++\codedesign\dynamicarray\tvector.h(7): note: see declaration of 'tVector'
+c:\users\s199083\visualstudios\c++\codedesign\dynamicarray\tvector.cpp(6): error C2509: '{ctor}': member function not declared in 'tVector'
+  c:\users\s199083\visualstudios\c++\codedesign\dynamicarray\tvector.h(7): note: see declaration of 'tVector'
+c:\users\s199083\visualstudios\c++\codedesign\dynamicarray\tvector.cpp(10): error C2955: 'tVector': use of class template requires template argument list
+  c:\users\s199083\visualstudios\c++\codedesign\dynamicarray\tvector.h(7): note: see declaration of 'tVector'
+c:\users\s199083\visualstudios\c++\codedesign\dynamicarray\tvector.cpp(11): error C2509: '{dtor}': member function not declared in 'tVector'
+  c:\users\s199083\visualstudios\c++\codedesign\dynamicarray\tvector.h(7): note: see declaration of 'tVector'
+  Generating Code...
