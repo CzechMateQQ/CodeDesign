@@ -1,18 +1,9 @@
 ﻿  main.cpp
-c:\users\s199083\visualstudios\c++\codedesign\dynamicarray\tvector.h(58): error C2760: syntax error: unexpected token ')', expected ';'
-  c:\users\s199083\visualstudios\c++\codedesign\dynamicarray\tvector.h(98): note: see reference to class template instantiation 'tVector<T>' being compiled
-c:\users\s199083\visualstudios\c++\codedesign\dynamicarray\main.cpp(18): error C3867: 'tVector<int>::size': non-standard syntax; use '&' to create a pointer to member
-c:\users\s199083\visualstudios\c++\codedesign\dynamicarray\main.cpp(18): error C2446: '<': no conversion from 'size_t (__thiscall tVector<int>::* )(void) const' to 'int'
-  c:\users\s199083\visualstudios\c++\codedesign\dynamicarray\main.cpp(18): note: There is no context in which this conversion is possible
-  tVector.cpp
-c:\users\s199083\visualstudios\c++\codedesign\dynamicarray\tvector.h(58): error C2760: syntax error: unexpected token ')', expected ';'
-  c:\users\s199083\visualstudios\c++\codedesign\dynamicarray\tvector.h(98): note: see reference to class template instantiation 'tVector<T>' being compiled
-c:\users\s199083\visualstudios\c++\codedesign\dynamicarray\tvector.cpp(5): error C2955: 'tVector': use of class template requires template argument list
-  c:\users\s199083\visualstudios\c++\codedesign\dynamicarray\tvector.h(7): note: see declaration of 'tVector'
-c:\users\s199083\visualstudios\c++\codedesign\dynamicarray\tvector.cpp(6): error C2509: '{ctor}': member function not declared in 'tVector'
-  c:\users\s199083\visualstudios\c++\codedesign\dynamicarray\tvector.h(7): note: see declaration of 'tVector'
-c:\users\s199083\visualstudios\c++\codedesign\dynamicarray\tvector.cpp(10): error C2955: 'tVector': use of class template requires template argument list
-  c:\users\s199083\visualstudios\c++\codedesign\dynamicarray\tvector.h(7): note: see declaration of 'tVector'
-c:\users\s199083\visualstudios\c++\codedesign\dynamicarray\tvector.cpp(11): error C2509: '{dtor}': member function not declared in 'tVector'
-  c:\users\s199083\visualstudios\c++\codedesign\dynamicarray\tvector.h(7): note: see declaration of 'tVector'
-  Generating Code...
+c:\users\s199083\visualstudios\c++\codedesign\dynamicarray\tvector.h(28): warning C4018: '<': signed/unsigned mismatch
+  c:\users\s199083\visualstudios\c++\codedesign\dynamicarray\tvector.h(22): note: while compiling class template member function 'tVector<int>::tVector(const tVector<int> &)'
+  c:\users\s199083\visualstudios\c++\codedesign\dynamicarray\main.cpp(16): note: see reference to function template instantiation 'tVector<int>::tVector(const tVector<int> &)' being compiled
+  c:\users\s199083\visualstudios\c++\codedesign\dynamicarray\main.cpp(10): note: see reference to class template instantiation 'tVector<int>' being compiled
+c:\users\s199083\visualstudios\c++\codedesign\dynamicarray\tvector.h(59): warning C4018: '<': signed/unsigned mismatch
+  c:\users\s199083\visualstudios\c++\codedesign\dynamicarray\tvector.h(57): note: while compiling class template member function 'void tVector<int>::reserve(size_t)'
+  c:\users\s199083\visualstudios\c++\codedesign\dynamicarray\tvector.h(72): note: see reference to function template instantiation 'void tVector<int>::reserve(size_t)' being compiled
+  DynamicArray.vcxproj -> C:\Users\s199083\VisualStudios\C++\CodeDesign\Debug\DynamicArray.exe

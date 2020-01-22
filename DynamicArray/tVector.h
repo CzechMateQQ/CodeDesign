@@ -16,6 +16,7 @@ public:
 	{
 		arrSize = 0;
 		arrCapacity = 5;
+		arr = new T[arrCapacity];
 	}
 
 	tVector(const tVector &vec)
@@ -54,7 +55,7 @@ public:
 
 	void reserve(size_t newCapacity)
 	{
-		T _arr = new T[newCapacity];
+		T* _arr = new T[newCapacity];
 		for (int i = 0; i < arrCapacity; ++i)
 		{
 			_arr[i] = arr[i];
@@ -62,22 +63,21 @@ public:
 		arrCapacity = newCapacity;
 		delete[] arr;
 		arr = _arr;
-		delete[] _arr;
 	}
 
 	void push_back(const T &value)
 	{
 		if (arrSize >= arrCapacity)
 		{
-			arr.reserve(arrSize * 2);
+			reserve(arrSize * 2);
 		}
-		arr[arr.size()] = value;
+		arr[size()] = value;
 		arrSize++;
 	}
 
 	void pop_back()
 	{
-		arr[arr.size() - 1] = nullptr;
+		arr[arrSize - 1] = NULL;
 		arrSize--;
 	}
 
@@ -88,10 +88,43 @@ public:
 
 	size_t size() const
 	{
-		
+		return arrSize;
 	}
 
 	size_t capacity() const
+	{
+		return arrCapacity;
+	}
+
+	T& operator[] (size_t index)	// returns the object at the given index
+	{
+		//return arr.at(index);
+		return arr[index];
+	}
+
+	bool empty() const   // Returns true if the vector contains no elements
+	{
+		if (arr[0] == NULL)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+
+	void resize(size_t _size)  // Resizes the vector to contain the given number of elements
+	{
+		arrSize = _size;
+	}
+
+	void shrink_to_fit() // Resizes the vector's capacity to match its size.
+	{
+		arrCapacity = arrSize;
+	}
+
+	void clear()         // Empties the vector (all elements are destroyed in this process)
 	{
 
 	}

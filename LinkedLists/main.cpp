@@ -3,7 +3,7 @@
 
 int main()
 {
-
+	tForwardList<int> test;
 
 	while(true){}
 
