@@ -29,8 +29,7 @@ public:
 		{
 			head = new Node(original.head->data);
 			Node* current = head;
-			Node* originalHead = original.head;
-			Node* originalCurr = originalHead;
+			Node* originalCurr = original.head;
 			while (originalCurr->next != nullptr)
 			{
 				current->next = new Node(originalCurr->next->data);
@@ -95,7 +94,23 @@ public:
 
 	void remove(const T& val)								// remove elements equal to given value					
 	{
+		if (head->data == val || head == nullptr)
+		{
+			pop_front();
+		}
 
+		Node* n = head;
+		
+		while (head->next != nullptr)
+		{
+			if (n->next->data == val)
+			{
+				Node* del = n->next;
+				n->next = n->next->next;
+				delete(del);
+			}
+			n = n->next;
+		}
 	}
 };
 
