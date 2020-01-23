@@ -3,9 +3,10 @@
 
 HighScoreTable::HighScoreTable()
 {
+	
 }
 
-HighScoreTable::HighScoreTable(string fileName)
+HighScoreTable::HighScoreTable(string fileName, int sortMethod)
 {
 	HighScoreEntry tmp;
 	txtFile.open(fileName, ios::in);
@@ -15,18 +16,28 @@ HighScoreTable::HighScoreTable(string fileName)
 		hsVector.push_back(tmp);
 	}
 
-	for (int i = 0; i < hsVector.size(); ++i)
+	if (sortMethod == 1)
 	{
-		for (int j = 1; j < hsVector.size()-1; ++j)
+		for (int i = 0; i < hsVector.size(); ++i)
 		{
-			if (hsVector[j].score < hsVector[j - 1].score)
+			for (int j = 1; j < hsVector.size()-1; ++j)
 			{
-				tmp = hsVector[j];
-				hsVector[j] = hsVector[j - 1];
-				hsVector[j - 1] = tmp;
+				//flip inequality to reverse sorting order
+				if (hsVector[j].score > hsVector[j - 1].score)
+				{
+					tmp = hsVector[j];
+					hsVector[j] = hsVector[j - 1];
+					hsVector[j - 1] = tmp;
+				}
 			}
 		}
 	}
+
+	else if (sortMethod == 2)
+	{
+
+	}
+
 	txtFile.close();
 }
 
@@ -42,20 +53,20 @@ bool HighScoreTable::pruneBottomNNScores(int bottomRows)
 		{
 			hsVector.pop_back();
 		}
-		txtFile.open("highscores.txt", ios::out);
-		for(int i = 0; i < hsVector.size(); ++i)
-		{
-			txtFile << hsVector[i].name << "\t" << hsVector[i].score << "\t" << hsVector[i].level << endl;
-		}
-		txtFile.close();
+		//txtFile.open("highscores.txt", ios::out);
+		//for(int i = 0; i < hsVector.size(); ++i)
+		//{
+		//	txtFile << hsVector[i].name << "\t" << hsVector[i].score << "\t" << hsVector[i].level << endl;
+		//}
+		//txtFile.close();
 		return true;
 	}
 }
 
-void HighScoreTable::printHighScores(vector<HighScoreEntry> _table, int _entryNum)
+void HighScoreTable::printHighScores(vector<HighScoreEntry> _table)
 {
-	_entryNum = _table.size();
-	for (int i = 0; i < _entryNum-1; ++i)
+	int _entryNum = _table.size();
+	for (int i = 0; i < _entryNum; ++i)
 	{
 		cout << _table[i].name << "\t" << _table[i].score << "\t" << _table[i].level << endl;
 	}
@@ -67,9 +78,7 @@ vector<HighScoreEntry> HighScoreTable::topNNScores(int topRows)
 	vector<HighScoreEntry> topScores;
 	for (int i = 0; i < topRows; ++i)
 	{
-		topScores[i].name = hsVector[i].name;
-		topScores[i].score = hsVector[i].score;
-		topScores[i].level = hsVector[i].level;
+		topScores.push_back(hsVector[i]);
 	}
 	return topScores;
 }

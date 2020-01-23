@@ -2,12 +2,14 @@
 
 int main()
 {
-	HighScoreTable test("highscores.txt");
+	HighScoreTable test ("highscores.txt", 1);
 
-	test.printHighScores(test.hsVector, test.hsVector.size());
+	//test.pruneBottomNNScores(7);
 
-	std::vector<HighScoreEntry>topScores = test.topNNScores(3);
-	test.printHighScores(topScores, topScores.size());
+	test.printHighScores(test.hsVector);
+
+	//vector<HighScoreEntry>topScores = test.topNNScores(3);
+	//test.printHighScores(topScores);
 
 	while(true){}
 

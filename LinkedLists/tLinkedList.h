@@ -1,4 +1,9 @@
 #pragma once
+#include <iostream>
+
+using std::cout;
+using std::cin;
+using std::endl;
 
 template<typename T>
 class tForwardList
@@ -70,9 +75,9 @@ public:
 
 		else
 		{
-			h->data = h->next->data;
+			head->data = head->next->data;
 
-			n = head->next;
+			Node* n = head->next;
 
 			head->next = head->next->next;
 
@@ -103,6 +108,10 @@ public:
 		
 		while (head->next != nullptr)
 		{
+			if (n->next == nullptr)
+			{
+				break;
+			}
 			if (n->next->data == val)
 			{
 				Node* del = n->next;
@@ -111,6 +120,17 @@ public:
 			}
 			n = n->next;
 		}
+	}
+
+	void printList()
+	{
+		while (head != nullptr)
+		{
+			cout << head->data << " ";
+
+			head = head->next;
+		}
+		cout << endl;
 	}
 };
 
